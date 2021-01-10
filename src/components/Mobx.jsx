@@ -1,6 +1,6 @@
 
 import React from 'react'
-import useStores from './hooks/useStores';
+import useStores from '../hooks/useStores';
 import { observer } from 'mobx-react-lite';
 
 const Mobx = () => {
@@ -16,7 +16,7 @@ const Mobx = () => {
       <h1>Mobx 6</h1>
       <em>makeAutoObservable</em>
       <div>
-        <button onClick={updateRandom}>Click</button>
+        <button onClick={updateRandom}>Update Random Number</button>
       </div>
       <div>{getRandom}</div>
     </>

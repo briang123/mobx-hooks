@@ -1,5 +1,5 @@
 import './App.css';
-import Mobx from './Mobx';
+import Mobx from './components/Mobx';
 
 function App() {
   return (
