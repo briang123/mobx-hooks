@@ -1,10 +1,10 @@
 import React from 'react';
-import MyStore from '../stores/mystore'
+import RootStore from '../stores/rootStore';
 
-const myStore = new MyStore();
+const rootStore = new RootStore();
 
 const storesContext = React.createContext({
-  MyStore: myStore,
+  RootStore: rootStore,
 });
 
 export default storesContext;

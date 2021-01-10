@@ -2,10 +2,13 @@ import {
  reaction, makeAutoObservable,
 } from 'mobx';
 
-class MyStore {
-  random = 0;
+class RandomStore {
+  random = 0
+  rootStore
 
-  constructor() {
+  constructor(rootStore) {
+    this.rootStore = rootStore;
+    this.rootStore.addLoadedStore('RandomStore');
     makeAutoObservable(this);
 
     reaction(
@@ -23,4 +26,4 @@ class MyStore {
   }
 }
 
-export default MyStore;
+export default RandomStore;
