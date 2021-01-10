@@ -7,7 +7,8 @@ const Randomizer = () => {
     RootStore: {
       RandomStore: { 
         updateRandom,
-        getRandom
+        getRandom,
+        getRandomHistory,
       }
     }
   } = useStores()
@@ -19,6 +20,7 @@ const Randomizer = () => {
         <button onClick={updateRandom}>Update Random Number</button>
       </div>
       <div>{getRandom}</div>
+      <div>{getRandomHistory}</div>
     </div>
   )
 }
