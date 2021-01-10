@@ -15,7 +15,7 @@ class UIStateStore {
     //little delay for demo
     setTimeout(()=>{
       this.loading = value;
-    }, 2000);
+    }, 1000);
   }
 
 }
